@@ -1,8 +1,39 @@
 body{
-    background-color: #0a194f;
+    background-color: #001f54;
     padding: 10px;
 }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav a{
+    text-decoration: none;
+    color: #F1C84A;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+    background-image: url(../img/272_50px.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 header{
+    background-image: url("../img/anzac.jpg");
+    height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F1C84A;
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.joinUsHero{
     background-image: url("../img/banner.jpg");
     height: 95vh;
     background-attachment: fixed;
@@ -12,11 +43,47 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f1ff33;
-    /* margin-top: 10vh; */
+    color: #F1C84A;
 }
-.test{
-    background-color: white;
-    height: 120vh;
+.words{
+    background-color: #E0E1E0;
     margin-top: 10px;
+    color: #001f54;
+}
+.joinSubHead {
+    display: flex;
+    justify-content: center;
+    background-color: #E0E1E0;
+    margin: 10px;
+}
+.joinUs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.involved {
+    flex-direction: column;
+    align-self: center;
+    width: 55vw;
+    padding: 10px;
+    background-color: #f3f6f5;
+    color: #001f54;
+}
+.baDiv {
+    max-height: 686px;    
+}
+.BA {
+    max-width: 40vw;
+}
+.branchDiv {
+    width: 40vw;
+}
+.branch {
+    width: 40vw;
+}
+.training {
+    width: 85vw;
+    text-align: center;
+    background-color: #4a7b9d;
+    color: black;
 }
