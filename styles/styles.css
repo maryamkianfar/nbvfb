@@ -1,11 +1,12 @@
 body{
-    background-color: #001f54;
-    padding: 10px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    background-color: #030125;
 }
 nav a{
     text-decoration: none;
@@ -15,6 +16,13 @@ nav a{
     background-image: url(../img/272_50px.png);
     background-position: center;
     background-repeat: no-repeat;
+}
+nav a:hover {
+    color: red;
+}
+/* add active 272 */
+.active{
+    color: white;
 }
 header{
     background-image: url("../img/anzac.jpg");
@@ -45,45 +53,76 @@ header{
     align-items: center;
     color: #F1C84A;
 }
-.words{
-    background-color: #E0E1E0;
-    margin-top: 10px;
+.joinUs {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
     color: #001f54;
 }
-.joinSubHead {
-    display: flex;
-    justify-content: center;
-    background-color: #E0E1E0;
-    margin: 10px;
-}
-.joinUs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* .joinUs-item, .joinUs-item img {
+    justify-self: center;
+    width : 100%;
+} */
+.joinSubHead{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: #020024;
+    color: #F1C84A
 }
 .involved {
-    flex-direction: column;
-    align-self: center;
-    width: 55vw;
-    padding: 10px;
-    background-color: #f3f6f5;
-    color: #001f54;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: left;
+    padding: 2rem 2rem;
 }
 .baDiv {
-    max-height: 686px;    
-}
-.BA {
-    max-width: 40vw;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: #030125;
+    background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%);
 }
 .branchDiv {
-    width: 40vw;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 3;
+}
+.ba {
+    display: flex;
+    max-width:60%;
+    padding-left: 3vw;;
 }
 .branch {
-    width: 40vw;
+    float: right;
+    padding: 3vw;
+    max-width: 40%;
 }
 .training {
-    width: 85vw;
-    text-align: center;
-    background-color: #4a7b9d;
-    color: black;
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: #e4e4e4;
+    padding: 2rem 2rem;
+}
+.register {
+    grid-row: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: 20vh;
+    padding-top: 5vh;
+    background-color: #e4e4e4;
+}
+.register a {
+    text-decoration: none;
+    background-color: #F1C84A;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 2px black;
+    border-radius: 5px;
+}
+.joinUs a:hover {
+    background-color:#0a0a4e;
+    color: #F1C84A;
 }
