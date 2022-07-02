@@ -49,7 +49,7 @@ header{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
-.home-left {
+.home-right {
     grid-column-start: 5;
     grid-column-end: 6;
     background-color: #e4e4e4;
@@ -59,17 +59,57 @@ header{
     justify-content: space-around;
     padding: 2vw;
 }
-.home-left a {
+.home-right a {
     text-decoration: none;
     background-color: #F1C84A;
     padding: 1rem 1.5rem;
     box-shadow: 2px 2px black;
     border-radius: 5px;
 }
-.home-left a:hover {
+.home-right a:hover {
     background-color:#0a0a4e;
     color: #F1C84A;
 }
+.home-left {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 1;
+    background-color: #030125;
+    background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%);
+}
+.calls {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+.slides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+    top: 280px;
+    height: 40px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }  
+  .next {
+    right: 80px;
+    border-radius: 3px 0 0 3px;
+  }  
+  .prev {
+    right: 975px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
 .joinUsHero{
     background-image: url("../img/banner.jpg");
     height: 95vh;
@@ -151,4 +191,11 @@ header{
 .joinUs a:hover {
     background-color:#0a0a4e;
     color: #F1C84A;
+}
+.historySect {
+    background-color: #030125;
+    background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%);
+    /* To delete */
+    height: 200vh;
+    /* To delete */
 }
