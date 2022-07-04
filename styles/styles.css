@@ -84,7 +84,10 @@ header{
 .calls {
     display: flex;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 3vw;
+}
+.calls img{
+    width: 60vw;;
 }
 .slides {
     display: none;
@@ -92,7 +95,7 @@ header{
 .prev, .next {
     cursor: pointer;
     position: relative;
-    top: 280px;
+    top: 20vw;
     height: 65px;
     width: auto;
     margin-top: -22px;
@@ -105,11 +108,11 @@ header{
     user-select: none;
   }  
   .next {
-    right: 80px;
+    right: 0;
     border-radius: 3px 0 0 3px;
   }  
   .prev {
-    right: 975px;
+    right: 65vw;
   }
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
@@ -399,40 +402,30 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;    
+        justify-content: center;
+        /* background-color: #030125;
+        background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%); */
     }
     .calls {
         width : 100vw;
     }
     .calls img{
-        width: 300px;
-        margin-left:25vw;
+        width: 90vw;;
+        margin-left: 20vw;
     }
     .prev, .next {
-        cursor: pointer;
-        position: relative;
-        top: 80px;
-        height: 65px;
-        width: auto;
-        margin-top: -22px;
-        padding: 16px;
-        color: #e4e4e4;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }  
-      .next {
-        right: 68px;
-        border-radius: 3px 0 0 3px;
-      }  
-      .prev {
-        right: 320px;
-      }
+        top: 25vw;
+    }  
+    .next {
+       right: 20vw;
+       border-radius: 3px 0 0 3px;
+     }  
+     .prev {
+       right: 93vw;
+   }
       .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
-      }
+    }
     .rightDiv {
         text-align: center;
         padding-bottom: 50px;
