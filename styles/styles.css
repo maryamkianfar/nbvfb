@@ -433,6 +433,13 @@ header{
     footer a {
         font-size: 0.8rem;
     }
+
+    /* joinUs */
+    /* ------ */
+    /* ------ */
+    .joinUsHero{
+      background-image: url("../img/banner-mob.jpg");
+  }
     .joinUs {
         display: flex;
         flex-direction: column;
