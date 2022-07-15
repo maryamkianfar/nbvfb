@@ -380,17 +380,33 @@ header{
     font-size: 0.8rem;
   }
 
+  @media screen and (max-width: 1300px) {
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .home {
+      grid-template-columns: 16% 16% 16% 16% 16%;
+  }
+    .home-left {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+    .home-right {
+      grid-column-start: 5;
+      grid-column-end: 7;
 
-  @media screen and (max-width: 480px) {
+    }
+
+  @media screen and (max-width: 800px) {
     body {
         font-size: 1rem;
     }
     header{
         background-image: url("../img/anzac-mob.jpg");
-        display: flex;
-        flex-wrap: wrap;
-        line-height: 2rem;
-        text-align: center;
         font-size: 1rem;
     }
     nav {
