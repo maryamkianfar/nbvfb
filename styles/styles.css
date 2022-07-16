@@ -84,7 +84,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 3vw; */
 }
 .calls img{
     margin-top: 3vh;;
@@ -95,11 +94,8 @@ header{
 }
 .prev, .next {
     cursor: pointer;
-    /* position: relative; */
-    /* top: 20vw; */
     height: 65px;
     width: auto;
-    /* margin-top: -22px; */
     padding: 16px;
     color: #e4e4e4;
     font-weight: bold;
