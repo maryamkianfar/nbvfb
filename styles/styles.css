@@ -57,7 +57,6 @@ header{
 .home-right {
     grid-column-start: 5;
     grid-column-end: 6;
-    background-color: #e4e4e4;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -84,21 +83,23 @@ header{
 .calls {
     display: flex;
     justify-content: center;
-    margin-top: 3vw;
+    align-items: center;
+    /* margin-top: 3vw; */
 }
 .calls img{
-    width: 60vw;;
+    margin-top: 3vh;;
+    width: 60vw;
 }
 .slides {
     display: none;
 }
 .prev, .next {
     cursor: pointer;
-    position: relative;
-    top: 20vw;
+    /* position: relative; */
+    /* top: 20vw; */
     height: 65px;
     width: auto;
-    margin-top: -22px;
+    /* margin-top: -22px; */
     padding: 16px;
     color: #e4e4e4;
     font-weight: bold;
@@ -261,34 +262,6 @@ header{
     left: 50%;
   }
   
-  /* Add arrows to the left container (pointing right) */
-  /* .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #e4e4e4;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #e4e4e4;
-  } */
-  
-  /* Add arrows to the right container (pointing left) */
-  /* .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #e4e4e4;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #e4e4e4 transparent transparent;
-  } */
-  
   /* Fix the circle for containers on the right side */
   .right::after {
     left: -16px;
@@ -390,7 +363,7 @@ header{
     }
     .home {
       grid-template-columns: 16% 16% 16% 16% 16%;
-  }
+    }
     .home-left {
       grid-column-start: 1;
       grid-column-end: 5;
@@ -398,8 +371,11 @@ header{
     .home-right {
       grid-column-start: 5;
       grid-column-end: 7;
-
     }
+    .calls img{
+      width: 50vw;
+  }
+  }
 
   @media screen and (max-width: 800px) {
     body {
@@ -426,15 +402,12 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* background-color: #030125;
-        background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%); */
     }
     .calls {
         width : 100vw;
     }
     .calls img{
-        width: 90vw;;
-        margin-left: 20vw;
+        width: 80vw;
     }
     .prev, .next {
         top: 25vw;
