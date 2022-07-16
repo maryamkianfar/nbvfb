@@ -13,6 +13,7 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     background-color: #030125;
+    display: none;
 }
 nav a{
     text-decoration: none;
@@ -33,7 +34,7 @@ nav a:hover {
 }
 header{
     background-image: url("../img/anzac.jpg");
-    height: 95vh;
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,6 +62,7 @@ header{
     flex-direction: column;
     justify-content: space-around;
     padding: 2vw;
+    background-color: #e4e4e4;
 }
 .home-right a {
     text-decoration: none;
@@ -121,10 +123,23 @@ header{
 
 .joinUsHero{
     background-image: url("../img/banner.jpg");
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F1C84A;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .joinUs {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    /* grid-template-rows: 33% 33% 33%; */
     text-align: center;
 }
 .joinSubHead{
@@ -161,17 +176,23 @@ header{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
 }
 .twokm {
     padding: 3vw;
-    width: 75%;
+    width: 80%;
 }
 .training {
     grid-row: 4;
     grid-column-start: 1;
     grid-column-end: 6;
-    background-color: #e4e4e4;
+    /* background-color: #e4e4e4; */
     padding: 2rem 2rem;
+    color: #F1C84A;
 }
 .register {
     grid-row: 5;
@@ -179,7 +200,7 @@ header{
     grid-column-end: 6;
     height: 20vh;
     padding-top: 5vh;
-    background-color: #e4e4e4;
+    /* background-color: #e4e4e4; */
 }
 .joinUs-item a {
     text-decoration: none;
@@ -381,13 +402,13 @@ header{
         background-image: url("../img/anzac-mob.jpg");
         font-size: 1rem;
     }
-    nav {
+    /* nav {
         display: flex;
         justify-content: space-around;
     }
     nav a {
         padding: 10px 15px;
-    }
+    } */
 
     /* home */
     /* ---- */
@@ -439,9 +460,12 @@ header{
     .baDiv {
         display: none;
     }
+    .involved, .twokmDiv, .findOut {
+      background-color: #e4e4e4;
+    }
     .findOut{
         height: 80px;
-        background-color: white;
+        padding-top: 20px;;
     }  
   }
 
