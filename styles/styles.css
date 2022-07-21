@@ -400,6 +400,7 @@ header{
       grid-column-end: 7;
 
     }
+  }
 
   @media screen and (max-width: 800px) {
     body {
