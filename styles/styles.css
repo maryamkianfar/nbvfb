@@ -53,13 +53,10 @@ header{
 .home {
     display: grid;
     grid-template-columns: 15% 15% 20% 20% 15% 15%;
-    grid-template-rows: 10% 45% 45%;
 }
 .home-right {
     grid-column-start: 5;
     grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 4;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -78,19 +75,29 @@ header{
     background-color:#0a0a4e;
     color: #F1C84A;
 }
+.home-center{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #030125;
+  background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%);
+}
 .home-left {
     grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-column-end: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-top: 10vh;;
     color: #F1C84A;
     text-align: center;
-    background-color: #030125;
-    background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%);
+    background-color: #e4e4e4;
+    /* background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%); */
+}
+.safetyButton{
+  margin-top: 40px;
 }
 .safetyButton a {
   text-decoration: none;
@@ -106,13 +113,15 @@ header{
 .safetyShot{
   margin: auto;
 }
-/* .calls {
+.safetyShot img {
+  width: 30vw;
+}
+.calls {
     display: flex;
     justify-content: center;
-    margin-top: 3vw;
 }
 .calls img{
-    width: 60vw;;
+    width: 25vw;
 }
 .slides {
     display: none;
@@ -120,12 +129,12 @@ header{
 .prev, .next {
     cursor: pointer;
     position: relative;
-    top: 20vw;
+    top: 50%;
     height: 65px;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #e4e4e4;
+    color: #0a0a4e;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -137,11 +146,11 @@ header{
     border-radius: 3px 0 0 3px;
   }  
   .prev {
-    right: 65vw;
+    right: 10px;;
   }
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  } */
+    background-color: rgba(0,0,0,0.5);
+  }
 
   /* Join us */
   /* ------ */
@@ -397,19 +406,32 @@ header{
       font-size: 1.5rem;
     }
     .home {
-      grid-template-columns: 16% 16% 16% 16% 16%;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;;
   }
+    .home img{
+      width: 90%
+    }
     .home-left {
       grid-column-start: 1;
-      grid-column-end: 5;
+      grid-column-end: 2;
+      grid-row: 1;
+    }
+    .home-center {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row: 1;
+      min-height: 300px;
+    }
+    .home-right {
+      grid-row: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      min-height: 450px;
     }
     .safetyShot img {
       max-width: 80%;
-    }
-    .home-right {
-      grid-column-start: 5;
-      grid-column-end: 7;
-
+      margin: 10%;
     }
   }
 
@@ -438,28 +460,38 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* background-color: #030125;
-        background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%); */
     }
-    .home-left{
-      min-height: 500px;
+    .home-right{
+      width: 100%;
+    }
+    .home-center{
+      width: 100%;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    .home-center img{
+      width: 80%;
+      margin-left: 10%;
+    }
+    .home-left {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      padding-top:10px;
     }
     .calls {
-        width : 100vw;
+        width : 100%;
     }
     .calls img{
         width: 90vw;;
-        margin-left: 20vw;
     }
-    .prev, .next {
-        top: 25vw;
-    }  
     .next {
-       right: 20vw;
-       border-radius: 3px 0 0 3px;
+       right: 10px;;
      }  
      .prev {
-       right: 93vw;
+       left: 10px;
    }
       .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
@@ -489,5 +521,8 @@ header{
         height: 80px;
         background-color: white;
     }  
+    .twokm{
+      width: 100%;
+    }
   }
 
