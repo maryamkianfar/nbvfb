@@ -52,15 +52,17 @@ header{
 /* --- */
 .home {
     display: grid;
-    grid-template-columns: 20% 20% 20% 15% 15% 10%;
+    grid-template-columns: 15% 15% 20% 20% 15% 15%;
     grid-template-rows: 10% 45% 45%;
 }
 .home-right {
     grid-column-start: 5;
     grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 2vw;
     background-color: #e4e4e4;
     text-align: center;
@@ -96,6 +98,10 @@ header{
   padding: 1rem 1.5rem;
   box-shadow: 2px 2px black;
   border-radius: 5px;
+}
+.safetyButton a:hover {
+  background-color:#0a0a4e;
+  color: #F1C84A;
 }
 .safetyShot{
   margin: auto;
