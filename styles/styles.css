@@ -13,7 +13,6 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     background-color: #030125;
-    display: none;
 }
 nav a{
     text-decoration: none;
@@ -34,7 +33,7 @@ nav a:hover {
 }
 header{
     background-image: url("../img/anzac.jpg");
-    height: 100vh;
+    height: 95vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,16 +52,20 @@ header{
 /* --- */
 .home {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 15% 15% 10%;
+    grid-template-rows: 10% 45% 45%;
 }
 .home-right {
     grid-column-start: 5;
-    grid-column-end: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 2vw;
     background-color: #e4e4e4;
+    text-align: center;
 }
 .home-right a {
     text-decoration: none;
@@ -78,11 +81,27 @@ header{
 .home-left {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #F1C84A;
+    text-align: center;
     background-color: #030125;
     background: linear-gradient( #030125 0%, #0a0a4e 35%, #0f384f 100%);
 }
-.calls {
+.safetyButton a {
+  text-decoration: none;
+  background-color: #F1C84A;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 2px black;
+  border-radius: 5px;
+}
+/* .safetyShot{
+  margin: auto;
+} */
+/* .calls {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +134,7 @@ header{
   }
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+  } */
 
   /* Join us */
   /* ------ */
