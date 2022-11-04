@@ -38,7 +38,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #F1C84A;
+    color: white;
     font-size: 2rem;
     text-shadow: 2px 2px black;
     display: flex;
@@ -64,8 +64,22 @@ header{
     background-color: #e4e4e4;
     text-align: center;
 }
-.home-right a {
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #F1C84A;
+  color: #0a0a4e;
+  padding: 1rem 1.5rem;
+  box-shadow: 1px 2px 5px black;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color:#c09e38;
+}
+/* .home-right a {
     text-decoration: none;
+    text-transform: uppercase;
     background-color: #F1C84A;
     padding: 1rem 1.5rem;
     box-shadow: 2px 2px black;
@@ -74,7 +88,7 @@ header{
 .home-right a:hover {
     background-color:#0a0a4e;
     color: #F1C84A;
-}
+} */
 .home-center{
   grid-column-start: 3;
   grid-column-end: 5;
@@ -99,8 +113,9 @@ header{
 .safetyButton{
   margin-top: 40px;
 }
-.safetyButton a {
+/* .safetyButton a {
   text-decoration: none;
+  text-transform: uppercase;
   background-color: #F1C84A;
   padding: 1rem 1.5rem;
   box-shadow: 2px 2px black;
@@ -109,7 +124,7 @@ header{
 .safetyButton a:hover {
   background-color:#0a0a4e;
   color: #F1C84A;
-}
+} */
 .safetyShot{
   margin: auto;
 }
@@ -163,7 +178,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #F1C84A;
+    color: white;
     font-size: 1.5rem;
     text-shadow: 2px 2px black;
     display: flex;
@@ -180,7 +195,7 @@ header{
     grid-column-start: 1;
     grid-column-end: 6;
     background-color: #020024;
-    color: #F1C84A
+    color: white;
 }
 .involved {
     grid-column-start: 1;
@@ -230,7 +245,7 @@ header{
     padding-top: 5vh;
     background-color: #e4e4e4;
 }
-.joinUs-item a {
+/* .joinUs-item a {
     text-decoration: none;
     background-color: #F1C84A;
     padding: 1rem 1.5rem;
@@ -240,7 +255,7 @@ header{
 .joinUs a:hover {
     background-color:#0a0a4e;
     color: #F1C84A;
-}
+} */
 
 /* History */
 /* ------ */
@@ -385,8 +400,8 @@ header{
     align-items: center;
     justify-content: center;
     height: 80px;
-    background-color: #e4e4e4;
-    font-weight: 500;
+    background-color: #dadada;
+    font-weight: bold;
   }
   footer a {
     text-decoration: none;
